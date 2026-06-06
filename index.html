@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="High Dive Rum Shelf Guide — 44 bottles, 7 categories. A practical guide to every rum behind the bar at High Dive in Harrisburg, PA." />
+
+  <title>Rum Shelf Guide · High Dive · Harrisburg, PA</title>
+
+  <!-- Google Fonts: Abril Fatface (display) + Raleway (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Sticky Header ── -->
+  <header id="site-header" role="banner">
+    <div class="header-inner">
+      <button class="site-logo" onclick="navigate('#landing')" aria-label="High Dive home">
+        HIGH <span>DIVE</span>
+      </button>
+      <nav class="header-nav" aria-label="Site navigation">
+        <button class="nav-btn" data-hash="#landing" onclick="navigate('#landing')">All Rums</button>
+        <button class="nav-btn" data-hash="#category" onclick="navigate('#category/white-light-mixing-rum')">Categories</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Main App Container — all views render here ── -->
+  <main id="app" role="main" aria-label="Rum shelf content">
+    <!-- Populated by script.js -->
+  </main>
+
+  <!-- ── Site Footer ── -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-logo">HIGH <span>DIVE</span></div>
+      <div class="footer-tagline">Craft Cocktails · Harrisburg, PA</div>
+      <div class="footer-divider" aria-hidden="true"></div>
+      <div class="footer-info">
+        1400 N. 3rd Street · Harrisburg, PA 17102<br />
+        <a href="tel:+17172207970">(717) 220-7970</a> ·
+        <a href="mailto:Tom@HighDive717.com">Tom@HighDive717.com</a><br />
+        Mon–Thu 4–11pm &nbsp;|&nbsp; Fri–Sat 4pm–12am
+      </div>
+      <p class="footer-note">
+        Rum shelf guide · 44 bottles · 7 categories · highdive717.com
+      </p>
+    </div>
+  </footer>
+
+  <!-- ── Back-to-top button ── -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+  <!-- ── Scripts: data first, then app logic ── -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
